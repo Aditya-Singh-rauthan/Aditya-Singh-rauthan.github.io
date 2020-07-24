@@ -4,9 +4,51 @@
     box-sizing: border-box;
 }
 body{
-    padding-top:5vh;
+    /*overflow-x: hidden;*/
     background:linear-gradient(to right,rgba(255, 0, 0, 0.63),rgba(0, 0, 255, 0.651));
 }
+
+
+
+header{
+    border:1px solid white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+    padding:10px;
+    min-height: 8vh;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .nav-links li{
+    display:inline;
+}
+.nav-links li:not(:last-child){
+    margin-right: 40px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:white;
+}
+.burger .b{
+    width:20px;
+    height:4px;
+    background:white;
+    margin:3px;
+    border-radius: 10px;
+}
+.burger{
+    display:none
+}
+
+
+
+
+
 .one{
     background: rgba(172, 142, 142, 0.973);
     border-radius: 10px;
@@ -15,8 +57,10 @@ body{
 }
 .calci{
     display:grid;
-    width:400px;
+    /*width:400px;
+    height:90vh;*/
     height:90vh;
+    width:90vw;
     background: rgb(184, 109, 109);
     margin:auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -175,9 +219,57 @@ body{
     grid-row:6/7;
 }
 
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:20px;
+    padding:20px;
+    border:1px solid white;
+}
+
+
+
 @media screen and (max-width:768px){
     .calci{
         height:90vh;
         width:90vw;
     }
+    .burger{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top:9vh;
+        right:0px;
+        border:1px solid white;
+        display:flex;
+        flex-direction: column;
+        height:92vh;
+        justify-content: space-around;
+        width:50vw;
+        background:linear-gradient(to right,rgba(255, 0, 0, 0.63),rgba(0, 0, 255, 0.651));
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li:last-child{
+        margin-right: 40px;
+    }
 }
+.nav-active{
+    transform:translateX(0%);
+}
+ @keyframes slider{
+     from{
+         opacity:0;
+         transform: translate(50%);
+     }
+     to{
+         opacity:1;
+         transform:translate(0%)
+     }
+ }

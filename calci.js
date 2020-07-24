@@ -15,5 +15,19 @@ function myFunction(click) {
     }
 }
 myFunction();
+function slider(click){
+    const burger=document.querySelector('.burger');
+    const nav=document.querySelector('.nav-links');
+    const links=document.querySelectorAll('.nav-links li');
+    nav.classList.toggle('nav-active');
 
-   
+    for(let i=0;i<links.length;i++) {
+        if (links[i].style.animation){
+            links[i].style.animation='';
+        }
+        else{
+            links[i].style.animation=`slider 0.5s ease forwards ${i/7+0.5}s`;
+        }
+    }
+};
+slider();
