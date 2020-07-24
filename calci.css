@@ -58,10 +58,8 @@ header .nav-links li{
 }
 .calci{
     display:grid;
-    /*width:400px;
-    height:90vh;*/
+    width:400px;
     height:90vh;
-    width:90vw;
     background: rgb(184, 109, 109);
     margin:auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -234,7 +232,7 @@ footer{
 
 @media screen and (max-width:768px){
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .calci{
         height:90vh;
@@ -244,6 +242,7 @@ footer{
         display: block;
     }
     .nav-links{
+        z-index: 1;
         position: absolute;
         top:12vh;
         right:0px;
