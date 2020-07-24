@@ -259,6 +259,8 @@ footer{
     .nav-links li:last-child{
         margin-right: 40px;
     }
+    footer{
+        margin-bottom:0px;
 }
 .nav-active{
     transform:translateX(0%);
