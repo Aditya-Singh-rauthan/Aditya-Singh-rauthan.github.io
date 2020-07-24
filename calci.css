@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     background:linear-gradient(to right,rgba(255, 0, 0, 0.63),rgba(0, 0, 255, 0.651));
 }
 
@@ -234,7 +234,7 @@ footer{
 
 @media screen and (max-width:768px){
     body{
-        overflow-x:hidden;
+        overflow: hidden;
     }
     .calci{
         height:90vh;
@@ -266,6 +266,12 @@ footer{
     footer{
         margin-bottom: 0px;
     }
+}
+
+.burger-active{
+    height:4px;
+    width:4px;
+    border-radius: 50px;
 }
 .nav-active{
     transform:translateX(0%);
