@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.watch{
+    display: flex;
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(3, 30, 80);
+}
+
+.dial{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    background:rgb(1, 23, 44);
+    border:2px solid black;
+}
+
+.center{
+    position: absolute;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background: gray;
+    z-index: 1;
+}
+.hour{
+    position: absolute;
+    width:4px;
+    height:120px;
+    background: gray;
+    border-radius:20px;
+    transform: rotate(0deg) translateY(-50%);
+    transform-origin: (100% 50%);
+}
+.minute{
+    position: absolute;
+    width:2px;
+    height:140px;
+    background: gray;
+    transform: rotateZ(90deg) translateY(-50%);
+    transform-origin: (100% 50%);
+}
+.second{
+    position: absolute;
+    width:2px;
+    height:140px;
+    background: red;
+    transform: rotateZ(180deg) translateY(-50%);
+    transform-origin: (100% 50%);
+}
+.one{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(0deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.two{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(90deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.three{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(180deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.four{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(-90deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+
+.five{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(30deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.six{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(60deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.seven{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(120deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.eight{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(150deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.nine{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(210deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.ten{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(240deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.eleven{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(-60deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
+.tweleve{
+    position: absolute;
+    height:150px;
+    color:rgba(255, 0, 0, 0.5);
+    transform: rotateZ(-30deg) translateY(-50%);
+    transform-origin: (100% 50%);
+    padding-top:5px;
+}
