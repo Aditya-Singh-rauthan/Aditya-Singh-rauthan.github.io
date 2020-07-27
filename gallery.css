@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.gallery{
+    padding:10px;
+    display: grid;
+    grid-gap:10px;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /* hello this line is my preference grid-template-columns: repeat(2,1fr);*/
+    /*grid-template-columns: repeat(auto-fill,350px);*/
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+
+}
+.gallery img{
+    width:100%;
+}
