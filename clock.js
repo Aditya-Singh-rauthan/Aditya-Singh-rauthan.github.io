@@ -7,12 +7,18 @@ window.onload=function(){
     document.querySelector('.second').style.transform='rotateZ('+eval(second_start*6)+'deg) translateY(-50%)';
     document.querySelector('.minute').style.transform='rotateZ('+eval(minute_start*6+0.1*second_start)+'deg) translateY(-50%)';
     document.querySelector('.hour').style.transform='rotateZ('+eval(hour_start%12*30+0.5*minute_start+(0.05/6)*second_start)+'deg) translateY(-50%)';
-
+    document.querySelector('.display').innerHTML=hour_start%12+':'+minute_start+':'+second_start;
     function sixDeg(){
         const second=document.querySelector('.second');
         var rotate=second.style.transform;
         var n=parseFloat(rotate.split('(')[1].split(')')[0]);
         second.style.transform='rotateZ('+eval(n+6)+'deg) translateY(-50%)';
+        var time=new Date();
+        let hour_start=time.getHours()
+        let minute_start=time.getMinutes()
+        let second_start=time.getSeconds()
+        document.querySelector('.display').innerHTML=hour_start%12+':'+minute_start+':'+second_start;
+
     }
 
     function sixDegMin(){

@@ -3,7 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
-
+.container{
+    display: flex;
+    justify-content: center;
+}
 .watch{
     display: flex;
     width:100vw;
@@ -13,6 +16,15 @@
     background: rgb(3, 30, 80);
 }
 
+.display{
+    position:absolute;
+    padding:8px;
+    background: gray;
+    /*transform:translateY(50%)*/
+    top:400px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
 .dial{
     width:300px;
     height:300px;
@@ -27,7 +39,7 @@
     height:40px;
     border-radius:50%;
     background: gray;
-    z-index: 1;
+    z-index: 2;
 }
 .hour{
     position: absolute;
@@ -53,6 +65,7 @@
     background: red;
     transform: rotateZ(180deg) translateY(-50%);
     transform-origin: (100% 50%);
+    z-index: 1;
 }
 .one{
     position: absolute;
